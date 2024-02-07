@@ -1,3 +1,29 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    background: #e5e5e5;
+}
+
+.contenedor-principal{
+
+    position: relative;
+    width: 600px;
+    height: 1000px;
+    margin: 30px 120px auto;
+    border: 3px solid;
+}
+
+.logo{
+     position: absolute;
+     display: block;
+     top: 40px;
+}
+
+.encript-messager{
+    width: 90%;
+    height: 30%;
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    border: none;
+    font-size: 20px;
 }
