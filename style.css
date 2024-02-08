@@ -1,15 +1,18 @@
 body{
     font-family: 'Montserrat', sans-serif;
-    background: #e5e5e5;
+    background: #F3F3F5;
 }
 
 .contenedor-principal{
 
     position: relative;
-    width: 600px;
-    height: 1000px;
-    margin: 30px 120px auto;
-    border: 3px solid;
+    width: 700px;
+    height: 900px;
+    margin: 10px 120px auto;
+    border: 3px solid black;
+    left: 100px;
+  
+    
 }
 
 .logo{
@@ -19,11 +22,53 @@ body{
 }
 
 .encript-messager{
-    width: 90%;
+    width: 50%;
     height: 30%;
     position: absolute;
     top: 200px;
-    left: 30px;
+    left: 200px;
     border: none;
     font-size: 20px;
+    background: #F3F3F5;
+    font-size: 30px;
+}
+
+.instrucciones{
+    position: absolute;
+    top: 700px;
+    display: inline-block;
+    margin: 40px auto;
+    left: 200px;
+    right: 40px;
+}
+
+.instrucciones p {
+    padding: 2em;
+    font-size: 15px;
+    color: blueviolet;
+    font-weight: bold;
+    
+}
+
+.contenedor-secundario{
+    width: 400px;
+    height: 700px;
+    position: absolute;
+    left: 1200px;
+    top: 100px;
+    border-radius: 10px;
+    background: white;
+}
+
+.contenedor-secundario p{
+    position: absolute;
+    left: 150px;
+    top: 50px;
+}
+
+.imagen-muneco{
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    
 }
