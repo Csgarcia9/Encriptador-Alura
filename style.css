@@ -1,74 +1,56 @@
 body{
-    font-family: 'Montserrat', sans-serif;
-    background: #F3F3F5;
+    background: #F3F5FC;
+
 }
-
-.contenedor-principal{
-
-    position: relative;
-    width: 700px;
+.container-encrypt{
+    width:1600px;
     height: 900px;
-    margin: 10px 120px auto;
-    border: 3px solid black;
-    left: 100px;
-  
-    
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+    position: relative;
 }
 
-.logo{
-     position: absolute;
-     display: block;
-     top: 40px;
-}
-
-.encript-messager{
+.encryptor{
     width: 50%;
-    height: 30%;
-    position: absolute;
-    top: 200px;
-    left: 200px;
-    border: none;
-    font-size: 20px;
-    background: #F3F3F5;
-    font-size: 30px;
+    height: 100%;
+    padding: 5px;
+    border: 1px solid blue;    
+    background-color: yellow; 
+    margin: 5px;
+    position: relative;
+
 }
 
-.instrucciones{
-    position: absolute;
-    top: 700px;
-    display: inline-block;
-    margin: 40px auto;
-    left: 200px;
-    right: 40px;
-}
-
-.instrucciones p {
-    padding: 2em;
-    font-size: 15px;
-    color: blueviolet;
-    font-weight: bold;
+.container-decryptor{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 5px;
+    border: 1px solid blue;    
+    background-color: yellow; 
+    margin: 5px;
+    position: relative;
+    
     
 }
-
-.contenedor-secundario{
-    width: 400px;
-    height: 700px;
-    position: absolute;
-    left: 1200px;
-    top: 100px;
+.decryptor{
+    width: 70%;
+    height: 900px;
+    background-color: #FFFFFF;
     border-radius: 10px;
-    background: white;
-}
-
-.contenedor-secundario p{
-    position: absolute;
-    left: 150px;
-    top: 50px;
-}
-
-.imagen-muneco{
-    position: absolute;
-    top: 200px;
-    left: 30px;
+    position: relative;
     
+}
+
+.decryptor p{
+    
+    text-align: center;
+    margin-top: 125px;
+    color: #0A3871;
+    font-weight: bold;
+    font-size: 1em;
 }
