@@ -1,9 +1,9 @@
 body{
     background: #F3F5FC;
-
+    font-family: 'Montserrat', sans-serif;
 }
 .container-encrypt{
-    width:1600px;
+    width:1800px;
     height: 900px;
     margin: 0 auto;
     display: flex;
@@ -54,3 +54,4 @@ body{
     font-weight: bold;
     font-size: 1em;
 }
+
