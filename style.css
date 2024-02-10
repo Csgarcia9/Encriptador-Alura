@@ -21,8 +21,8 @@ body{
     
     position: absolute;
     background: #F3F5FC;
-    top: 150px;
-    left: 200px;
+    top: 170px;
+    left: 190px;
     width: 50%;
     height: 30%;
     font-size: 20px;
@@ -33,12 +33,52 @@ body{
     
 }
 
+#instrucciones-mensaje{
+    position: absolute;
+    width: 35%;
+    bottom: 90px;
+    left: 100px;
+}
+
+
+.buttons-action{
+    
+    position: absolute;
+    bottom: 10px;
+    left: 85px;
+    padding: 1em;
+    
+}
+
+
+#decrypt-button{
+    background: #ECEFF1;
+    color: #0A3871;
+    margin-left: 20px;
+}
+
+.Action-button{
+    width: 190px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    font-weight: bold;
+    color: #ECEFF1;
+    background: #0A3871;
+    cursor: pointer;
+    position: relative;
+}
+
+.Action-button:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
 .encryptor{
     width: 50%;
     height: 100%;
     padding: 5px;
-    border: 1px solid blue;    
-    background-color: yellow; 
     margin: 5px;
     position: relative;
 
@@ -51,8 +91,6 @@ body{
     align-items: center;
     height: 100%;
     padding: 5px;
-    border: 1px solid blue;    
-    background-color: yellow; 
     margin: 5px;
     position: relative;
     
