@@ -18,12 +18,20 @@
 
             <textarea name="message" class="text-message" cols="30" rows="10" id="text-message" placeholder="Ingrese el texto aqui"></textarea>
 
+            <img src="/Encriptador-Alura-desarrollo/imagenes/instruccion.PNG" alt="intrucciones del mensaje" id="instrucciones-mensaje">
+
+                <div class="buttons-action" id="container-button-action">
+                    <button id="encrypt-button" class="Action-button">Encriptar</button>
+
+                    <button id="decrypt-button" class="Action-button">Desencriptar</button>
+                </div>
+
         </div>
 
         <div class="container-decryptor">
 
             <div class="decryptor">
-                <p class="text-result" id="text-result">Resultado del mensaje</p>
+                <p class="text-result" id="text-result"></p>
 
                 <img src="/Encriptador-Alura-desarrollo/imagenes/Muñeco.png" alt="munero-alura" id="imagen-muneco" class="imagen-muneco" >
                 
@@ -31,7 +39,7 @@
 
                 <p class="instruction-message" id="instruction-message">Ingresa el texto que desees encriptar o desencriptar.</p>
 
-                <button id="Copy-button" class="Action-button">Copiar</button>
+                <button id="Copy-button" class="Action-button" hidden>Copiar</button>
 
             </div>
         </div>
@@ -41,3 +49,4 @@
     <script src="app.js"></script>
 </body>
 </html>
+
