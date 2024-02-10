@@ -12,6 +12,27 @@ body{
     position: relative;
 }
 
+.logo-alura{
+    position: absolute;
+    top: 30px;
+}
+
+.text-message{
+    
+    position: absolute;
+    background: #F3F5FC;
+    top: 150px;
+    left: 200px;
+    width: 50%;
+    height: 30%;
+    font-size: 20px;
+    color: #0A3871;
+    border: none;
+    border-radius: 10px;
+
+    
+}
+
 .encryptor{
     width: 50%;
     height: 100%;
@@ -38,7 +59,7 @@ body{
     
 }
 .decryptor{
-    width: 70%;
+    width: 60%;
     height: 900px;
     background-color: #FFFFFF;
     border-radius: 10px;
@@ -57,7 +78,7 @@ body{
 
 .imagen-muneco{
     position: absolute;
-    left: 140px;
+    left: 90px;
     bottom: 350px;
     
 }
@@ -65,11 +86,11 @@ body{
 .decryptor h1{
     
     width: 490px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     color: #0A3871;
     position: absolute;
-    left: 50px;
+    left: 40px;
     bottom: 250px;
    
 }
@@ -79,7 +100,7 @@ body{
     position: absolute;
     color: #0A3871;
     bottom: 200px;
-    left: 75px;
+    left: 40px;
 }
 
 #Copy-button{
@@ -87,7 +108,7 @@ body{
     font-size: 20px;
     bottom: 20px;
     text-align: center;
-    left: 195px;
+    left: 170px;
     cursor: pointer;
     background-color: #F3F5FC;
     border: none;
