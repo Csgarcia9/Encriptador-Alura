@@ -53,7 +53,7 @@ body{
 
 
 #decrypt-button{
-    background: #ECEFF1;
+    background: #D8DFE8;
     color: #0A3871;
     margin-left: 20px;
 }
@@ -65,7 +65,7 @@ body{
     border-radius: 15px;
     height: 50px;
     font-weight: bold;
-    color: #F3F5FC;
+    color: #D8DFE8;
     background: #0A3871;
     cursor: pointer;
     position: relative;
@@ -149,7 +149,7 @@ body{
     text-align: center;
     left: 170px;
     cursor: pointer;
-    background-color: #F3F5FC;
+    background-color: #D8DFE8;
     border: none;
     border-radius: 5px;
     width: 40%;
