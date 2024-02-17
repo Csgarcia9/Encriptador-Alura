@@ -13,10 +13,64 @@
     let instructionMessage = document.getElementById('instruction-message');
     instructionMessage.setAttribute('hidden',true);
 
+    function reemplazarCaracteres(cadena){
+      const reemplazos = {'e':'enter','i':'imes','a':'ai','o':'ober','u':'ufat'};
+ 
+      //Aplicar el cambio de letras
+ 
+      let nuevaCadena = cadena?.replace(/[aeiou]/g, function(match){
+          return reemplazos[match];
+      });
+      return nuevaCadena;
+ 
+  }
 
-    // Boton de copiado del texto
-    
+  // Tomo el texto a encriptar del textarea 
+ 
+  let textoAencriptar = document.getElementById('text-message').value;
+
+  // Le asigno la funcion de flecha una variable
+  let resultText = reemplazarCaracteres(textoAencriptar);
+
+  // Accedo al elemento parrafo para darle el valor del texto
+  let parrafoResultado = document.getElementById('text-result');
+
+  // Le paso el resultado de encriptar
+  parrafoResultado.textContent = resultText;
+
+  let textArea = document.getElementById('text-message');
+  textArea.value = ''; // Clear the content of the text area
+
 });
+
+
+let botonDesencritar = document.getElementById('decrypt-button');
+
+botonDesencritar.addEventListener('click', () => {
+  function volverInicio(cadena) {
+    const reemplazos = { 'enter': 'e', 'imes': 'i', 'ai': 'a', 'ober': 'o', 'ufat': 'u' };
+
+    // Aplicar el cambio de letras
+
+    let cadenaOriginal = cadena.replace(/enter|imes|ai|ober|ufat/g, function (match) {
+      return reemplazos[match];
+    });
+    return cadenaOriginal;
+  }
+
+  let textEncrypt = document.getElementById('text-message').value;
+
+  let textDescryp = volverInicio(textEncrypt);
+
+  let parrafoDe = document.getElementById('text-result');
+
+  parrafoDe.textContent = textDescryp;
+
+  let textArea = document.getElementById('text-message');
+  textArea.value = ''; // Clear the content of the text area
+});
+
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -36,38 +90,3 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-/*Para la logica de encriptrar todo*/ 
- 
-/*
-
-function reemplazarCaracteres(cadena){
-    const reemplazos = {'e':'enter','i':'imes','a':'ai','o':'ober','u':'ufat'};
-
-    //Aplicar el cambio de letras
-
-    let nuevaCadena = cadena.replace(/[aeiou]/g, function(match){
-        return reemplazos[match];
-    });
-    return nuevaCadena;
-}
-
-function volverInicio(cadena){
-    const reemplazos = {'enter':'e','imes':'i','ai':'a','ober':'o','ufat':'u'};
-
-    //Aplicar el cambio de letras
-
-    let cadenaOriginal = cadena.replace(/[enterimesaioberufat]/g, function(match){
-        return reemplazos[match];
-    });
-    return cadenaOriginal;
-}
-
-let cadenaOriginal = prompt('Digite una cadena, solo minusculas sin acentos:');
-let nuevaCadena = reemplazarCaracteres(cadenaOriginal);
-alert(`La cadena nueva es ${nuevaCadena}.`);
-
-cadenados = volverInicio(nuevaCadena);
-alert(`La cadena inicial es ${cadenados}.`);
-
-
-*/
