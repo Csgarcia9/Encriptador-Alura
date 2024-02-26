@@ -162,3 +162,98 @@ body{
     transform: scale(1.2);
     transition: 1s;
 }
+
+@media screen and (max-width: 480px){
+    body {
+        background: #F3F5FC;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+    }
+    
+    .container-encrypt {
+        max-width: 1200px; /* Ajusta según sea necesario */
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .logo-alura {
+        position: absolute;
+        top: 30px;
+    }
+    
+    .text-message {
+        background: #F3F5FC;
+        width: 100%;
+        max-width: 600px; /* Ajusta según sea necesario */
+        box-sizing: border-box;
+        margin: 20px auto;
+        padding: 10px;
+        font-size: 20px;
+        color: #0A3871;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+    }
+    
+    #instrucciones-mensaje {
+        width: 100%;
+        max-width: 400px; /* Ajusta según sea necesario */
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    
+    .buttons-action {
+        width: 100%;
+        max-width: 400px; /* Ajusta según sea necesario */
+        box-sizing: border-box;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    .Action-button {
+        width: 48%;
+        font-size: 20px;
+        border: none;
+        border-radius: 15px;
+        height: 50px;
+        font-weight: bold;
+        color: #D8DFE8;
+        background: #0A3871;
+        cursor: pointer;
+    }
+
+    .decryptor{
+        width:100%;
+        height: 100%;
+        
+    }
+    
+    /* Otros estilos sin cambios */
+    
+    @media only screen and (max-width: 480px) {
+        .container-encrypt {
+            padding: 10px;
+        }
+    
+        .text-message {
+            margin: 10px auto;
+        }
+    
+        #instrucciones-mensaje,
+        .buttons-action {
+            max-width: 100%;
+        }
+    
+        .Action-button {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+    }
+    
+
+
+}
